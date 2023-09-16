@@ -8,45 +8,46 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="{{ url(app()->getLocale() . '/') }}">{{ __('navbar.home') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="{{ url(app()->getLocale() . '/about') }}">{{ __('navbar.about') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/products">Products</a>
+                    <a class="nav-link" href="{{ url(app()->getLocale() . '/products') }}">{{ __('navbar.products') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link" href="{{ url(app()->getLocale() . '/contact') }}">{{ __('navbar.contact') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/blog">Blog</a>
+                    <a class="nav-link" href="{{ url(app()->getLocale() . '/blog') }}">{{ __('navbar.blog') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/testimonials">Testimonials</a>
+                    <a class="nav-link" href="{{ url(app()->getLocale() . '/testimonials') }}">{{ __('navbar.testimonials') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/portfolio">Portfolio</a>
+                    <a class="nav-link" href="{{ url(app()->getLocale() . '/portfolio') }}">{{ __('navbar.portfolio') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/faq">FAQ</a>
+                    <a class="nav-link" href="{{ url(app()->getLocale() . '/faq') }}">{{ __('navbar.faq') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/pricing">Pricing</a>
+                    <a class="nav-link" href="{{ url(app()->getLocale() . '/pricing') }}">{{ __('navbar.pricing') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/terms">Terms</a>
+                    <a class="nav-link" href="{{ url(app()->getLocale() . '/terms') }}">{{ __('navbar.terms') }}</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-globe"></i> Language
+                        <i class="fas fa-globe"></i> {{ strtoupper(app()->getLocale()) }}
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
-                        <a class="dropdown-item" href="#">English</a>
-                        <a class="dropdown-item" href="#">عربي</a>
+                        <a class="dropdown-item" href="{{ url('language/en') }}">English</a>
+                        <a class="dropdown-item" href="{{ url('language/ar') }}">عربي</a>
                         <!-- Add more language options here -->
                     </div>
                 </li>
+
             </ul>
         </div>
     </div>

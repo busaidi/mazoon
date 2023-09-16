@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Company</title>
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    {{--    initial bootsrap--}}
+    @if(app()->getLocale() == 'ar')
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.rtl.min.css') }}">
+    @else
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    @endif
+    {{--    end initial bootsrap--}}
 </head>
 <body>
 @include('public.partials.topbar')

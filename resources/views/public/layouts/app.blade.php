@@ -11,6 +11,10 @@
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     @endif
     {{--    end initial bootsrap--}}
+
+    <link rel="stylesheet" href="{{ asset('css/carousel-style.css') }}">
+
+
 </head>
 <body>
 @include('public.partials.topbar')
@@ -23,6 +27,7 @@
 </header>
 
 <div class="container">
+    @include('public.partials.carousel')
     @yield('content')
 </div>
 

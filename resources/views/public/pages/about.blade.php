@@ -1,5 +1,5 @@
 @extends('public.layouts.app')
-
+@section('title', __('navbar.about'))
 @section('content')
     <!-- About Us Content -->
     <section class="about-content">

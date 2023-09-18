@@ -1,10 +1,16 @@
-<div class="topbar text-white py-2 p-0" style="background-color: #E95420">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <p class="mb-0">91711170</p>
+<div class="py-0" style="background-color: #005599;">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-auto">
+                <p class="mb-0 text-white">{{ __('carousel.topbar') }}</p>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="social-icon text-white mr-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon text-white mr-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mazoon_aluminum" class="social-icon text-white mr-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon text-white mr-2"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
     </div>
-</div>
-</div>
 </div>

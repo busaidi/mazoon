@@ -1,5 +1,5 @@
 @extends('public.layouts.app')
-
+@section('title', __('navbar.portfolio'))
 @section('content')
 
 <section class="portfolio">

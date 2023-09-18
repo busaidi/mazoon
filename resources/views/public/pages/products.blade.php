@@ -1,4 +1,5 @@
 @extends('public.layouts.app')
+@section('title', __('navbar.products'))
 
 @section('content')
 <!-- Product Section -->

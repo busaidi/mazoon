@@ -1,5 +1,6 @@
 <?php
 return [
+    'title'=> 'Mazoon Aluminum',
     'home' => 'Home',
     'about' => 'About',
     'products' => 'Products',

@@ -1,5 +1,5 @@
 @extends('public.layouts.app')
-
+@section('title', __('navbar.contact'))
 @section('content')
     <h2>Contact Us</h2>
     <p>Have questions or need assistance? Reach out to us through the following contact information:</p>

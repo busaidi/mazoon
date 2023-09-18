@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Company</title>
+    <title>@yield('title', 'navbar.home') | {{ __('navbar.title') }}</title>
     {{--    initial bootsrap--}}
     @if(app()->getLocale() == 'ar')
         <link rel="stylesheet" href="{{ asset('css/bootstrap.rtl.min.css') }}">
@@ -13,24 +13,28 @@
     {{--    end initial bootsrap--}}
 
     <link rel="stylesheet" href="{{ asset('css/carousel-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
 
 
 </head>
 <body>
 @include('public.partials.topbar')
-
 @include('public.partials.navbar')
-
 <header>
     @include('public.partials.header')
+
     @include('public.partials.slider')
 </header>
-
-<div class="container">
+<div class="container-fluid ">
     @include('public.partials.carousel')
+</div>
+<div class="container">
+</div>
+<div class="container">
     @yield('content')
 </div>
-
 <footer>
     @include('public.partials.footer')
 </footer>

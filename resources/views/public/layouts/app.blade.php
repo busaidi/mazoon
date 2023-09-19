@@ -13,6 +13,7 @@
     {{--    end initial bootsrap--}}
 
     <link rel="stylesheet" href="{{ asset('css/carousel-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/animation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
@@ -40,6 +41,7 @@
 </footer>
 
 <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
+<script src="{{ asset('js/animation.js') }}"></script>
 
 </body>
 </html>

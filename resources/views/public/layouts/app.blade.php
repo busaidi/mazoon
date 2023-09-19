@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,14 +25,8 @@
 @include('public.partials.navbar')
 <header>
     @include('public.partials.header')
-
-    @include('public.partials.slider')
 </header>
-<div class="container-fluid ">
     @include('public.partials.carousel')
-</div>
-<div class="container">
-</div>
 <div class="container">
     @yield('content')
 </div>

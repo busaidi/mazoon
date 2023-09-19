@@ -1,4 +1,4 @@
-<div class="py-0" style="background-color: #005599;">
+<div class="py-0 bg-primary">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-auto">

@@ -24,9 +24,10 @@
 @include('public.partials.topbar')
 @include('public.partials.navbar')
 <header>
-    @include('public.partials.header')
+{{--    @include('public.partials.header')--}}
+    @yield('hero')
 </header>
-    @include('public.partials.carousel')
+{{--    @include('public.partials.carousel')--}}
 <div class="container">
     @yield('content')
 </div>

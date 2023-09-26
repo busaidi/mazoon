@@ -1,4 +1,4 @@
-<div class="container-fluid bg-primary anim-slideFromBottom">
+<div class="container-fluid bg-primary">
 <div class="text-white py-3 p-3 container">
     <h1>{{ __('header.title') }}</h1>
     <p>{{ __('header.body') }}</p>

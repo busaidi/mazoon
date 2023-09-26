@@ -1,5 +1,6 @@
 <div class="container-fluid bg-light border-top">
-    <footer class="py-3 my-4">
-        <p class="text-center text-body-secondary"> 2023 &copy; {{ date('Y') }} Investment Corporation, Mazoon Aluminum</p>
+    <footer class="py-3 my-4 text-center text-body-secondary">
+        <p> {{ __('footer.footer') }} &copy; {{ date('Y') }}</p>
+        <i>v0.19.0 Beta</i>
     </footer>
 </div>

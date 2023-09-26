@@ -23,10 +23,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"
-                           href="{{ url(app()->getLocale() . '/products') }}">{{ __('navbar.products') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
                            href="{{ url(app()->getLocale() . '/contact') }}">{{ __('navbar.contact') }}</a>
                     </li>
                 </ul>

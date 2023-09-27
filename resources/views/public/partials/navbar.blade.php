@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- Logo -->
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="{{ url(app()->getLocale() . '/') }}">
                 <img src="{{ asset('images/logo.svg') }}" alt="Logo" width="80">
             </a>
 

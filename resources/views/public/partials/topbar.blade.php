@@ -11,7 +11,7 @@
         </a>
 
         <!-- WhatsApp -->
-        <a href="https://wa.me/0096891711170" target="_blank" class="text-white me-3 text-decoration-none" style="font-size: 0.9rem;">
+        <a href="https://wa.me/+96891711170" target="_blank" class="text-white me-3 text-decoration-none" style="font-size: 0.9rem;">
             <i class="fab fa-whatsapp"></i>
         </a>
 

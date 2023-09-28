@@ -1,5 +1,5 @@
-<div class="container-fluid" style="background-color: #999999;">
-    <div class="container d-flex justify-content-end py-1">
+<div class="container-fluid bg-primary">
+    <div class="container d-flex justify-content-center py-1">
         <!-- Phone -->
         <a href="tel:0096891711170" target="_blank" class="text-white me-3 text-decoration-none" style="font-size: 0.9rem;">
             <i class="fas fa-phone-alt"></i>

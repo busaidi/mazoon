@@ -19,6 +19,9 @@ Route::prefix('{locale}')->middleware(['language'])->where(['locale' => 'en|ar']
     Route::get('/', [PublicController::class, 'index']);
     Route::get('/about', [PublicController::class, 'about']);
     Route::get('/products', [PublicController::class, 'products']);
+    Route::get('/mazoon45', [PublicController::class, 'mazoon45']);
+    Route::get('/mazoon60', [PublicController::class, 'mazoon60']);
+    Route::get('/mazooncw', [PublicController::class, 'mazooncw']);
     Route::get('/contact', [PublicController::class, 'contact']);
     Route::get('/blog', [PublicController::class, 'blog']);
     Route::get('/testimonials', [PublicController::class, 'testimonials']);

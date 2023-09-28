@@ -20,6 +20,18 @@ class PublicController extends Controller
     {
         return view('public.pages.products');
     }
+    public function mazoon45()
+    {
+        return view('public.products.mazoon45');
+    }
+    public function mazoon60()
+    {
+        return view('public.products.mazoon60');
+    }
+    public function mazooncw()
+    {
+        return view('public.products.mazooncw');
+    }
 
     public function contact()
     {

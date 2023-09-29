@@ -5,7 +5,7 @@
     <div class="container-fluid px-0">
 
         <!-- Hero Section with Parallax Effect -->
-        <div class="hero bg-primary text-white text-center py-5" style="background-image: url('/images/products/mazoon45/mazoon45_2.jpg'); background-attachment: fixed;">
+        <div class="hero bg-primary text-white text-center py-5" style="background-image: url('/images/products/mazoon45/public/images/products/mazoon45/Mazoon45_20230929_213638_0000.jpg'); background-attachment: fixed;">
             <h1>Mazoon 45 Casement System</h1>
             <p class="lead">
                 {{--Catchy tagline or sentence about the product.--}}

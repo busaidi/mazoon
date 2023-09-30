@@ -12,8 +12,8 @@ return [
     'pricing' => 'الاسعار',
     'terms' => 'البنود',
     /*Products sub menu*/
-    'mazoon45'=>'مزون 45',
-    'mazoon60'=>'مزون 60',
+    'mazoon45'=>'مزون ٤٥',
+    'mazoon60'=>'مزون ٦٠',
     'mazooncw'=>'مزون كارتن وال',
 
 ];

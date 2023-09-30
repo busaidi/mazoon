@@ -25,8 +25,8 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{{ url(app()->getLocale() . '/mazoon45') }}">{{ __('navbar.mazoon45') }}</a></li>
-                            <li><a class="dropdown-item" href="{{ url(app()->getLocale() . '/mazoon60') }}">{{ __('navbar.mazoon60') }}</a></li>
-                            <li><a class="dropdown-item" href="{{ url(app()->getLocale() . '/mazooncw') }}">{{ __('navbar.mazooncw') }}</a></li>
+                            <li><a class="dropdown-item" href="{{--{{ url(app()->getLocale() . '/mazoon60') }}--}}">{{ __('navbar.mazoon60') }}</a></li>
+                            <li><a class="dropdown-item" href="{{--{{ url(app()->getLocale() . '/mazooncw') }}--}}">{{ __('navbar.mazooncw') }}</a></li>
                         </ul>
                     </li>
                     {{--End Prduct Menue and Submenus--}}

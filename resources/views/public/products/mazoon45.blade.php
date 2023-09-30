@@ -5,11 +5,11 @@
     <div class="container-fluid px-0">
 
         <!-- Hero Section with Parallax Effect -->
-        <div class="hero bg-primary text-white text-center py-5" style="background-image: url('/images/products/mazoon45/public/images/products/mazoon45/Mazoon45_20230929_213638_0000.jpg'); background-attachment: fixed;">
-            <h1>Mazoon 45 Casement System</h1>
+        <div class="hero bg-primary text-white text-center py-5" style="background-image: url('/images/products/mazoon45/photo_1.jpg'); background-attachment: fixed; background-position: center; background-repeat: repeat">
+            <h1>{{ __('mazoon45.title') }}</h1>
             <p class="lead">
                 {{--Catchy tagline or sentence about the product.--}}
-                Where Design Meets Durability.
+                {{ __('mazoon45.lead') }}
             </p>
             {{--<a href="#purchase" class="btn btn-light">Purchase Now</a>--}}
         </div>
@@ -55,37 +55,44 @@
                     <img src="{{ asset('images/products/mazoon45/mazoon_product_1.png') }}" class="img-fluid rounded" alt="Product Image">
                 </div>
                 <div class="col-md-6">
-                    <h3>Mazoon 45 Casement System</h3>
-                    <p>
-                        The Mazoon 45 Windows and Doors System embodies a harmonious blend of style and functionality. As a casement system, it's intricately designed to offer contemporary aesthetics seamlessly paired with a robust performance. Precision-engineered and meticulously crafted, each unit promises unmatched durability, easy maintenance, and a sleek appearance that stands out.
-                    </p>
+                    <h3>{{ __('mazoon45.title') }}</h3>
+                    <p>{{ __('mazoon45.description') }}</p>
                 </div>
             </div>
 
             <!-- Product Features -->
             <div class="row">
-                <h3 class="border-bottom p-3">Key Features:</h3>
+                <h3 class="border-bottom p-3">{{ __('mazoon45.features') }}</h3>
                 <div class="col-md-3 mb-4">
                     <img src="{{ asset('images/products/mazoon45/f2.png') }}" class="img-fluid mb-2" alt="Feature 1">
-                    <h5>Triple Sealing EPDM</h5>
-                    <p>Equipped with three sealing EPDM, the Mazoon 45 system offers impeccable isolation. This ensures protection against dust, rain leakage, and delivers superior sound insulation, making it a beacon of tranquility in the bustling urban landscape.</p>
+                    <h5>{{ __('mazoon45.f1') }}</h5>
+                    <p>{{ __('mazoon45.f1description') }}</p>
                 </div>
+
+
                 <div class="col-md-3 mb-4">
-                    <img src="{{ asset('images/products/mazoon45/f1.jpg') }}" class="img-fluid mb-2" alt="Feature 2">
-                    <h5>Corner Joint</h5>
-                    <p>Precision is key in our design. We employ crimping corner joints for added strength, and each corner is fortified with two alignment corner joints, ensuring perfect alignment and enhanced stability.</p>
+                    <video controls autoplay loop class="img-fluid mb-2">
+                        <source src="{{ asset('images/products/mazoon45/corner.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h5>{{ __('mazoon45.f2') }}</h5>
+                    <p>{{ __('mazoon45.f2description') }}</p>
                 </div>
+
+
+
                 <div class="col-md-3 mb-4">
                     <img src="{{ asset('images/products/mazoon45/f1.jpg') }}" class="img-fluid mb-2" alt="Feature 3">
-                    <h5>Mullion Connector</h5>
-                    <p>Our meticulous approach ensures each mullion connector is securely fastened using two hidden screws. This not only bolsters the structure but also maintains the system's sleek appearance.</p>
+                    <h5>{{ __('mazoon45.f3') }}</h5>
+                    <p>{{ __('mazoon45.f3description') }}</p>
                 </div>
                 <div class="col-md-3 mb-4">
                     <img src="{{ asset('images/products/mazoon45/f1.jpg') }}" class="img-fluid mb-2" alt="Feature 4">
-                    <h5>Adaptable Profiles</h5>
-                    <p>The Mazoon 45's profiles are uniquely versatile, catering to a variety of architectural needs. Whether you're aiming for an expansive panoramic view or a segmented window layout, our system adapts effortlessly.</p>
+                    <h5>{{ __('mazoon45.f4') }}</h5>
+                    <p>{{ __('mazoon45.f4description') }}</p>
                 </div>
             </div>
         </div>
     </div>
 @endsection
+

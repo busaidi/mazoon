@@ -5,7 +5,7 @@
     <div class="container-fluid px-0">
 
         <!-- Hero Section with Parallax Effect -->
-        <div class="hero bg-primary text-white text-center py-5" style="background-image: url('/images/products/mazoon45/photo_1.jpg'); background-attachment: fixed; background-position: center; background-repeat: repeat">
+        <div class="hero bg-primary text-white text-center py-5" style="background-image: url('/images/products/mazoon45/8.jpg'); background-attachment: fixed; background-position: bottom; background-repeat: no-repeat">
             <h1>{{ __('mazoon45.title') }}</h1>
             <p class="lead">
                 {{--Catchy tagline or sentence about the product.--}}
@@ -82,12 +82,12 @@
 
 
                 <div class="col-md-3 mb-4">
-                    <img src="{{ asset('images/products/mazoon45/f1.jpg') }}" class="img-fluid mb-2" alt="Feature 3">
+                    <img src="{{ asset('images/products/mazoon45/mullion.png') }}" class="img-fluid mb-2" alt="Feature 3">
                     <h5>{{ __('mazoon45.f3') }}</h5>
                     <p>{{ __('mazoon45.f3description') }}</p>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <img src="{{ asset('images/products/mazoon45/f1.jpg') }}" class="img-fluid mb-2" alt="Feature 4">
+                    <img src="{{ asset('images/products/mazoon45/adptive.png') }}" class="img-fluid mb-2" alt="Feature 4">
                     <h5>{{ __('mazoon45.f4') }}</h5>
                     <p>{{ __('mazoon45.f4description') }}</p>
                 </div>

@@ -17,116 +17,146 @@
                 <!-- Smaller box on the right -->
                 <div class="col-md-4">
                     <div class="p-3">
-                        <img src="{{ asset('images/hero/hero_home.png') }}" width="80%" alt="Hero Mazoon Aluminum" class="img-fluid rounded-5">
+                        <img src="{{ asset('images/hero/hero_home.png') }}" width="80%" alt="Hero Mazoon Aluminum"
+                             class="img-fluid rounded-5">
                     </div>
                 </div>
             </div>
         </div>
         @endsection
 
-@section('content')
-    <div class="text-center container py-3">
-        <h1 class="display-4 fw-bold text-body-emphasis">{{ __('hero.title') }} </h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">{{ __('hero.body') }}</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                <a href="{{ url(app()->getLocale() . '/about') }}">
-                    <button type="button"
-                            class="btn btn-primary btn-lg px-4 me-sm-3">{{ __('hero.link') }}</button>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <p class="desc text-center lead">{{ __('home.h1_lead') }} <a target="_blank" class="link-dark" href="https://www.napcooman.com/">{{ __('home.h1_lead_link') }}</a></p>
-        <img src="{{ asset('images/hero/hero-gray.jpg') }}" class="img-fluid rounded-3 mb-4" alt="Hero Mazoon Aluminum">
-    </div>
-
-    <div class="container-fluid bg-light py-3">
-        <div class="container px-4">
-            <h2 class="pb-2 border-bottom">{{ __('home.h1') }}</h2>
-
-            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-                <div class="col d-flex flex-column align-items-start gap-2">
-                    <h2 class="fw-bold text-body-emphasis">{{ __('home.h1_lead') }}</h2>
-                    <a target="_blank" href="https://www.napcooman.com/"
-                       class="btn btn-primary btn-lg">{{ __('home.h1_lead_link') }}</a>
+        @section('content')
+            <div class="text-center container py-3">
+                <h1 class="display-4 fw-bold text-body-emphasis">{{ __('hero.title') }} </h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">{{ __('hero.body') }}</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                        <a href="{{ url(app()->getLocale() . '/about') }}">
+                            <button type="button"
+                                    class="btn btn-primary btn-lg px-4 me-sm-3">{{ __('hero.link') }}</button>
+                        </a>
+                    </div>
                 </div>
+            </div>
 
-                <div class="container-fluid">
-                    <div class="col">
-                        <div class="row row-cols-1 row-cols-sm-2 g-4">
-                            <div class="col d-flex flex-column gap-2">
-                                <div class="text-bg-primary bg-gradient rounded-3">
-                                    <h4 class="text-center">{{ __('home.f1') }}</h4>
+            <div class="container">
+                <p class="desc text-center lead">{{ __('home.h1_lead') }} <a target="_blank" class="link-dark"
+                                                                             href="https://www.napcooman.com/">{{ __('home.h1_lead_link') }}</a>
+                </p>
+                <img src="{{ asset('images/hero/hero-gray.jpg') }}" class="img-fluid rounded-3 mb-4"
+                     alt="Hero Mazoon Aluminum">
+            </div>
+
+            <div class="container-fluid bg-light py-3">
+                <div class="container px-4">
+                    <h2 class="pb-2 border-bottom">{{ __('home.h1') }}</h2>
+
+                    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                        <div class="col d-flex flex-column align-items-start gap-2">
+                            <h2 class="fw-bold text-body-emphasis">{{ __('home.h1_lead') }}</h2>
+                            <a target="_blank" href="https://www.napcooman.com/"
+                               class="btn btn-primary btn-lg">{{ __('home.h1_lead_link') }}</a>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="col">
+                                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                                    <div class="col d-flex flex-column gap-2">
+                                        <div class="text-bg-primary bg-gradient rounded-3">
+                                            <h4 class="text-center">{{ __('home.f1') }}</h4>
+                                        </div>
+                                        <p class="text-body-secondary">{{ __('home.f1p') }}</p>
+                                    </div>
+
+                                    <div class="col d-flex flex-column gap-2">
+                                        <div class="text-bg-primary bg-gradient rounded-3">
+                                            <h4 class="text-center">{{ __('home.f2') }}</h4>
+                                        </div>
+                                        <p class="text-body-secondary">{{ __('home.f2p') }}</p>
+                                    </div>
+
+                                    <div class="col d-flex flex-column gap-2">
+                                        <div class="text-bg-primary bg-gradient rounded-3">
+                                            <h4 class="text-center">{{ __('home.f3') }}</h4>
+                                        </div>
+                                        <p class="text-body-secondary">{{ __('home.f3p') }}</p>
+                                    </div>
+
+                                    <div class="col d-flex flex-column gap-2">
+                                        <div class="text-bg-primary bg-gradient rounded-3">
+                                            <h4 class="text-center">{{ __('home.f4') }}</h4>
+                                        </div>
+                                        <p class="text-body-secondary">{{ __('home.f4p') }}</p>
+                                    </div>
+
                                 </div>
-                                <p class="text-body-secondary">{{ __('home.f1p') }}</p>
                             </div>
-
-                            <div class="col d-flex flex-column gap-2">
-                                <div class="text-bg-primary bg-gradient rounded-3">
-                                    <h4 class="text-center">{{ __('home.f2') }}</h4>
-                                </div>
-                                <p class="text-body-secondary">{{ __('home.f2p') }}</p>
-                            </div>
-
-                            <div class="col d-flex flex-column gap-2">
-                                <div class="text-bg-primary bg-gradient rounded-3">
-                                    <h4 class="text-center">{{ __('home.f3') }}</h4>
-                                </div>
-                                <p class="text-body-secondary">{{ __('home.f3p') }}</p>
-                            </div>
-
-                            <div class="col d-flex flex-column gap-2">
-                                <div class="text-bg-primary bg-gradient rounded-3">
-                                    <h4 class="text-center">{{ __('home.f4') }}</h4>
-                                </div>
-                                <p class="text-body-secondary">{{ __('home.f4p') }}</p>
-                            </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="container-fluid">
+                <div class="container px-4 py-5">
+                    <div class="row g-4 py-5">
+
+                        <div class="col-lg-3 d-flex flex-column gap-2">
+                            <div class="text-bg-primary bg-gradient rounded-3">
+                                <h4 class="text-center">{{ __('home.f5') }}</h4>
+                            </div>
+                            <p class="text-body-secondary">{{ __('home.f5p') }}</p>
+                        </div>
+
+                        <div class="col-lg-3 d-flex flex-column gap-2">
+                            <div class="text-bg-primary bg-gradient rounded-3">
+                                <h4 class="text-center">{{ __('home.f6') }}</h4>
+                            </div>
+                            <p class="text-body-secondary">{{ __('home.f6p') }}</p>
+                        </div>
+
+                        <div class="col-lg-3 d-flex flex-column gap-2">
+                            <div class="text-bg-primary bg-gradient rounded-3">
+                                <h4 class="text-center">{{ __('home.f7') }}</h4>
+                            </div>
+                            <p class="text-body-secondary">{{ __('home.f7p') }}</p>
+                        </div>
+
+                        <div class="col-lg-3 d-flex flex-column gap-2">
+                            <div class="text-bg-primary bg-gradient rounded-3">
+                                <h4 class="text-center">{{ __('home.f8') }}</h4>
+                            </div>
+                            <p class="text-body-secondary">{{ __('home.f8p') }}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
     </div>
-
-    <div class="container-fluid">
-        <div class="container px-4 py-5">
-            <div class="row g-4 py-5">
-
-                <div class="col-lg-3 d-flex flex-column gap-2">
-                    <div class="text-bg-primary bg-gradient rounded-3">
-                        <h4 class="text-center">{{ __('home.f5') }}</h4>
-                    </div>
-                    <p class="text-body-secondary">{{ __('home.f5p') }}</p>
-                </div>
-
-                <div class="col-lg-3 d-flex flex-column gap-2">
-                    <div class="text-bg-primary bg-gradient rounded-3">
-                        <h4 class="text-center">{{ __('home.f6') }}</h4>
-                    </div>
-                    <p class="text-body-secondary">{{ __('home.f6p') }}</p>
-                </div>
-
-                <div class="col-lg-3 d-flex flex-column gap-2">
-                    <div class="text-bg-primary bg-gradient rounded-3">
-                        <h4 class="text-center">{{ __('home.f7') }}</h4>
-                    </div>
-                    <p class="text-body-secondary">{{ __('home.f7p') }}</p>
-                </div>
-
-                <div class="col-lg-3 d-flex flex-column gap-2">
-                    <div class="text-bg-primary bg-gradient rounded-3">
-                        <h4 class="text-center">{{ __('home.f8') }}</h4>
-                    </div>
-                    <p class="text-body-secondary">{{ __('home.f8p') }}</p>
-                </div>
-
+    <div class="container-fluid bg-light">
+    <div class="container">
+        <h1 class="border-bottom">{{ __('navbar.products') }}</h1>
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <img src="{{ asset('images/products/mazoon45/mazoon_product_1.png') }}" class="img-fluid rounded" alt="Product Image">
+            </div>
+            <div class="col-md-6">
+                <h1>{{ __('mazoon45.title') }}</h1>
+                <p class="lead">
+                    {{--Catchy tagline or sentence about the product.--}}
+                    {{ __('mazoon45.lead') }}
+                </p>
+                <h3>{{ __('mazoon45.title') }}</h3>
+                <p>{{ __('mazoon45.description') }}
+                    <a href="{{ url(app()->getLocale() . '/mazoon45') }}">
+                        {{ __('home.h1_lead_link') }}
+                    </a>
+                </p>
             </div>
         </div>
     </div>
+    </div>
+
+
 
     {{--<section class="services py-5">
         <div class="container">

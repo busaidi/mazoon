@@ -52,7 +52,7 @@
                     <h2 class="pb-2 border-bottom">{{ __('home.h1') }}</h2>
 
                     <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-                        <div class="col d-flex flex-column align-items-start gap-2">
+                        <div class="col d-flex flex-column align-items-start gap-2 py-3">
                             <h2 class="fw-bold text-body-emphasis">{{ __('home.h1_lead') }}</h2>
                             <a target="_blank" href="https://www.napcooman.com/"
                                class="btn btn-primary btn-lg">{{ __('home.h1_lead_link') }}</a>
@@ -133,7 +133,7 @@
             </div>
     </div>
     <div class="container-fluid bg-light">
-    <div class="container">
+    <div class="container py-3">
         <h1 class="border-bottom">{{ __('navbar.products') }}</h1>
         <div class="row mb-5">
             <div class="col-md-6">

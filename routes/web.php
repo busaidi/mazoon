@@ -13,7 +13,8 @@ use App\Http\Controllers\LanguageController;
 
 // Redirect the base URL to the default locale
 Route::get('/', function () {
-    return redirect(app()->getLocale());
+    $locale = session()->get('locale', app()->getLocale());
+    return redirect($locale);
 });
 
 // Prefix routes with locale

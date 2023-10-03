@@ -48,8 +48,8 @@
                             {{ strtoupper(app()->getLocale()) }}
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                            <li><a class="dropdown-item" href="{{ url('language/en') }}">English</a></li>
-                            <li><a class="dropdown-item" href="{{ url('language/ar') }}">Arabic</a></li>
+                            <li><a class="dropdown-item" href="{{ route('language.switch', ['lang' => 'en', 'redirect' => request()->path()]) }}">English</a></li>
+                            <li><a class="dropdown-item" href="{{ route('language.switch', ['lang' => 'ar', 'redirect' => request()->path()]) }}">Arabic</a></li>
                         </ul>
                     </li>
                 </ul>

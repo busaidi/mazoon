@@ -1,7 +1,9 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\LanguageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,5 +33,8 @@ Route::prefix('{locale}')->middleware(['language'])->where(['locale' => 'en|ar']
     Route::get('/terms', [PublicController::class, 'terms']);
 });
 
-//language switch url related with LanguageController
-Route::get('/language/{lang}', [LanguageController::class, 'switch'])->where('lang', 'en|ar');
+// Language switch URL related with LanguageController
+// The switch route will have a 'redirect' query parameter to tell the controller where to redirect after switching.
+Route::get('/language/{lang}', [LanguageController::class, 'switch'])
+    ->name('language.switch')
+    ->where('lang', 'en|ar');

@@ -6,6 +6,7 @@ return [
     'products' => 'Products',
     'contact' => 'Contact',
     'blog' => 'Blog',
+    'news' => 'News',
     'testimonials' => 'Testimonials',
     'portfolio' => 'Portfolio',
     'faq' => 'FAQ',

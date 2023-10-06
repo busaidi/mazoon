@@ -33,12 +33,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url(app()->getLocale() . '/about') }}">{{ __('navbar.about') }}</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url(app()->getLocale() . '/blog') }}">{{ __('navbar.blog') }}</a>
-                    </li>
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link" href="{{ url(app()->getLocale() . '/blog') }}">{{ __('navbar.blog') }}</a>--}}
+{{--                    </li>--}}
+                    {{--<li class="nav-item">
                         <a class="nav-link" href="{{ url(app()->getLocale() . '/news') }}">{{ __('navbar.news') }}</a>
-                    </li>
+                    </li>--}}
 
                     <li class="nav-item">
                         <a class="nav-link"

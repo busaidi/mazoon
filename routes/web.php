@@ -34,8 +34,8 @@ Route::prefix('{locale}')->middleware(['language'])->where(['locale' => 'en|ar']
     Route::get('/faq', [PublicController::class, 'faq']);
     Route::get('/pricing', [PublicController::class, 'pricing']);
     Route::get('/terms', [PublicController::class, 'terms']);
-    Route::resource('blog', BlogController::class);
-    Route::resource('news', NewsController::class);
+    /*Route::resource('blog', BlogController::class);
+    Route::resource('news', NewsController::class);*/
 });
 
 // Language switch URL related with LanguageController

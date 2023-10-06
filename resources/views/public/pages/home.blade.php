@@ -4,25 +4,23 @@
 
 @section('hero')
     <div class="container-fluid bg-primary">
-        <div class="container mt-5 text-white">
+        <div class="container text-white">
             <div class="row">
-                <!-- Bigger box on the left -->
-                <div class="col-md-7">
+                <!-- Image box on the left -->
+                <div class="col-12 col-md-5 d-flex align-items-center justify-content-center py-3">
+                    <img src="{{ asset('images/hero/hero_home.png') }}" class="img-fluid rounded-1 custom-hero-image" alt="Hero Mazoon Aluminum">
+
+                </div>
+                <!-- Text box on the right -->
+                <div class="col-12 col-md-7">
                     <div class="p-3">
                         <h1 class="fw-bold text-white">{{ __('home.title') }}</h1>
-
                         <h2>{{ __('home.body') }}</h2>
-                    </div>
-                </div>
-                <!-- Smaller box on the right -->
-                <div class="col-md-4">
-                    <div class="p-3">
-                        <img src="{{ asset('images/hero/hero_home.png') }}" width="80%" alt="Hero Mazoon Aluminum"
-                             class="img-fluid rounded-5">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
         @endsection
 
         @section('content')

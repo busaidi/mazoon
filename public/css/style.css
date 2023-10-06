@@ -1,1 +1,20 @@
+/*for hero image*/
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+/*hero image home and building*/
+.custom-hero-image {
+    width: 100%; /* By default, it will take full width */
+}
+
+/* This will target viewports/desktops that are at least 768px wide */
+@media (min-width: 768px) {
+    .custom-hero-image {
+        width: 60%; /* On desktop, the image will only take up 80% width of its container */
+        max-width: 500px; /* Maximum width the image can achieve, adjust as needed */
+        display: block;
+        margin: 0 auto; /* Centers the image within its container */
+    }
+}
 

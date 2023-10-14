@@ -129,7 +129,6 @@
                     </div>
                 </div>
             </div>
-    </div>
     <div class="container-fluid bg-light">
     <div class="container py-3">
         <h1 class="border-bottom">{{ __('navbar.products') }}</h1>

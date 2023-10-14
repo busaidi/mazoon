@@ -2,26 +2,26 @@
 
 @section('title', __('navbar.home'))
 
-@section('hero')
-    <div class="container-fluid bg-primary">
-        <div class="container text-white">
-            <div class="row">
-                <!-- Image box on the left -->
-                <div class="col-12 col-md-5 d-flex align-items-center justify-content-center py-3">
-                    <img src="{{ asset('images/hero/hero_home.png') }}" class="img-fluid rounded-1 custom-hero-image" alt="Hero Mazoon Aluminum">
+{{--@section('hero')--}}
+{{--    <div class="container-fluid bg-primary">--}}
+{{--        <div class="container text-white">--}}
+{{--            <div class="row">--}}
+{{--                <!-- Image box on the left -->--}}
+{{--                <div class="col-12 col-md-5 d-flex align-items-center justify-content-center py-3">--}}
+{{--                    <img src="{{ asset('images/hero/hero_home.png') }}" class="img-fluid rounded-1 custom-hero-image" alt="Hero Mazoon Aluminum">--}}
 
-                </div>
-                <!-- Text box on the right -->
-                <div class="col-12 col-md-7">
-                    <div class="p-3">
-                        <h1 class="fw-bold text-white">{{ __('home.title') }}</h1>
-                        <h2>{{ __('home.body') }}</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        @endsection
+{{--                </div>--}}
+{{--                <!-- Text box on the right -->--}}
+{{--                <div class="col-12 col-md-7">--}}
+{{--                    <div class="p-3">--}}
+{{--                        <h1 class="fw-bold text-white">{{ __('home.title') }}</h1>--}}
+{{--                        <h2>{{ __('home.body') }}</h2>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--        @endsection--}}
 
         @section('content')
             <div class="text-center container py-3">

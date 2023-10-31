@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ __('navbar.title') }} | @yield('title')</title>
+    @foreach(config('app.available_locales') as $langCode => $langName)
+        <link rel="alternate" hreflang="{{ $langCode }}" href="{{ generateLocalizedUrl($langCode) }}" />
+    @endforeach
     {{--    initial bootsrap--}}
     @if(app()->getLocale() == 'ar')
         <link rel="stylesheet" href="{{ asset('css/bootstrap.rtl.min.css') }}">

@@ -14,4 +14,11 @@ return [
     'lead_2'=>'Our distinctive feature is the combination of innovative design and high-quality materials that are used in common with all of our current systems, namely Mozoon 45, Mozoon 60, and Mozoon curtain walls, which leads to the integration of our systems with each other, and meets the unique requirements of our customers, with our unwavering commitment to excellence and customer satisfaction.
 Throughout our development, we have been driven by constant innovation, adaptability and a passion for serving our customers. Our goal? Not just leading the aluminum industry, but shaping its future, setting new standards.',
 
+
+
+
+
+
+    'description' => 'Learn about Mazoon Aluminum, a reputable provider of aluminum and glass solutions with a dedicated team ensuring the highest standards of quality and service.',
+    'keywords' => 'About Mazoon Aluminum, aluminum solutions, glass solutions, quality, service',
 ];

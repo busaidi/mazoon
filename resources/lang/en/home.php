@@ -31,4 +31,10 @@ return [
     /*End Home feature*/
 
 
+    /*    Start Seo */
+    'description' => 'Mazoon Aluminum is a leading provider of aluminum and glass solutions, offering an extensive range of products and services for residential and commercial applications.',
+    'keywords' => 'Mazoon Aluminum, aluminum solutions, glass solutions, residential applications, commercial applications',
+
+
+
 ];

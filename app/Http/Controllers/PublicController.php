@@ -6,65 +6,53 @@ use Illuminate\Http\Request;
 
 class PublicController extends Controller
 {
+//    to passing meat from lang to view
+    public function getSEOInfo($page)
+    {
+        return [
+            'description' => __($page . '.description'),
+            'keywords' => __($page . '.keywords'),
+        ];
+    }
+
+
+
     public function index()
     {
-        return view('public.pages.home');
+        $seoInfo = $this->getSEOInfo('home');
+        return view('public.pages.home',$seoInfo);
     }
 
     public function about()
     {
-        return view('public.pages.about');
+        $seoInfo = $this->getSEOInfo('about');
+        return view('public.pages.about',$seoInfo);
     }
 
-    public function products()
-    {
-        return view('public.pages.products');
-    }
+
     public function mazoon45()
     {
-        return view('public.products.mazoon45');
+        $seoInfo = $this->getSEOInfo('mazoon45');
+        return view('public.products.mazoon45',$seoInfo);
     }
-    public function mazoon60()
-    {
-        return view('public.products.mazoon60');
-    }
-    public function mazooncw()
-    {
-        return view('public.products.mazooncw');
-    }
+
+
 
     public function contact()
     {
-        return view('public.pages.contact');
+        $seoInfo = $this->getSEOInfo('contact');
+        return view('public.pages.contact',$seoInfo);
     }
 
-    public function blog()
-    {
-        return view('public.pages.blog');
-    }
 
-    public function testimonials()
-    {
-        return view('public.pages.testimonials');
-    }
 
-    public function portfolio()
-    {
-        return view('public.pages.portfolio');
-    }
 
-    public function faq()
-    {
-        return view('public.pages.faq');
-    }
 
-    public function pricing()
-    {
-        return view('public.pages.pricing');
-    }
 
-    public function terms()
-    {
-        return view('public.pages.terms');
-    }
+
+
+
+
+
+
 }

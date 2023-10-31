@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     @include('public.partials.seo', [
         'title' => __('navbar.title') . ' | ' .  __('title'),
         'description' => $description,
         'keywords' => $keywords
     ])
-
-    {{--    initial bootsrap--}}
     @if(app()->getLocale() == 'ar')
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.rtl.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.rtl.min.css') }}">
     @else
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     @endif
     {{--    end initial bootsrap--}}
-
     <link rel="stylesheet" href="{{ asset('css/carousel-style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/animation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">

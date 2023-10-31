@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'navbar.home') | {{ __('navbar.title') }}</title>
+    <title>{{ __('navbar.title') }} | @yield('title')</title>
     {{--    initial bootsrap--}}
     @if(app()->getLocale() == 'ar')
         <link rel="stylesheet" href="{{ asset('css/bootstrap.rtl.min.css') }}">

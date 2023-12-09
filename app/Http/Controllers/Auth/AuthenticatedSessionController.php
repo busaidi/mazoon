@@ -29,20 +29,23 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(RouteServiceProvider::HOME);
+        $locale = app()->getLocale(); // Get the current locale
+        return redirect()->intended(route('dashboard', ['locale' => $locale]));
     }
 
     /**
      * Destroy an authenticated session.
      */
-    public function destroy(Request $request): RedirectResponse
+    public function destroy(Request $request, $locale): RedirectResponse
     {
         Auth::guard('web')->logout();
 
         $request->session()->invalidate();
-
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        $locale = app()->getLocale(); // Get the current locale
+        return redirect(route('login', ['locale' => $locale]));
+
     }
+
 }

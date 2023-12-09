@@ -9,10 +9,12 @@
         'keywords' => $keywords
     ])
     @if(app()->getLocale() == 'ar')
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.rtl.min.css') }}">
+        @vite(['resources/css/app.rtl.css', 'resources/js/app.js'])
     @else
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     {{--    end initial bootsrap--}}
     <link rel="stylesheet" href="{{ asset('css/carousel-style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/animation.css') }}">

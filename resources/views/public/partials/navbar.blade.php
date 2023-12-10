@@ -1,68 +1,172 @@
-<div class="container-fluid bg-light border-bottom">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container -->
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- Logo -->
+        <!-- Toggle button -->
+        <button
+            class="navbar-toggler mb-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
             <a class="navbar-brand" href="{{ url(app()->getLocale() . '/') }}">
-                <img src="{{ asset('images/logo.svg') }}" alt="Logo" width="80">
+                <img src="{{ asset('images/logo.svg') }}" alt="Mazoon Aluminum Logo" height="40"><br>
             </a>
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+            </ul>
 
-            <!-- Toggle button for mobile view -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            @auth
+            <!-- Notifications (for mobile view) -->
+            <ul class="navbar-nav d-lg-none">
 
-            <!-- Navbar items -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url(app()->getLocale() . '/') }}">{{ __('navbar.home') }}</a>
-                    </li>
-                    {{--Start Prduct Menue and Submenus--}}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ __('navbar.products') }}
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{ url(app()->getLocale() . '/mazoon45') }}">{{ __('navbar.mazoon45') }}</a></li>
-                            {{--<li><a class="dropdown-item" href="--}}{{--{{ url(app()->getLocale() . '/mazoon60') }}--}}{{--">{{ __('navbar.mazoon60') }}</a></li>
-                            <li><a class="dropdown-item" href="--}}{{--{{ url(app()->getLocale() . '/mazooncw') }}--}}{{--">{{ __('navbar.mazooncw') }}</a></li>--}}
-                        </ul>
-                    </li>
-                    {{--End Prduct Menue and Submenus--}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url(app()->getLocale() . '/about') }}">{{ __('navbar.about') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url(app()->getLocale() . '/download') }}">{{ __('navbar.download') }}</a>
-                    </li>
-{{--                    <li class="nav-item">--}}
-{{--                        <a class="nav-link" href="{{ url(app()->getLocale() . '/blog') }}">{{ __('navbar.blog') }}</a>--}}
-{{--                    </li>--}}
-                    {{--<li class="nav-item">
-                        <a class="nav-link" href="{{ url(app()->getLocale() . '/news') }}">{{ __('navbar.news') }}</a>
-                    </li>--}}
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLinkMobile"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuLinkMobile"
+                    >
+                        <li><a class="dropdown-item" href="#">Some news</a></li>
+                        <li><a class="dropdown-item" href="#">Another news</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Avatar (for mobile view) -->
+            <ul class="navbar-nav d-lg-none">
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuAvatarMobile"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        <img
+                            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                            class="rounded-circle"
+                            height="25"
+                            alt="Portrait of a Man"
+                        />
+                    </a>
+                    <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuAvatarMobile"
+                    >
+                        <li><a class="dropdown-item" href="#">My profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Cart Icon (for mobile view) -->
+            <ul class="navbar-nav d-lg-none">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Collapsible wrapper -->
+        @endauth
 
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="{{ url(app()->getLocale() . '/contact') }}">{{ __('navbar.contact') }}</a>
+            @guest
+                <!-- Sign In and Sign Up for mobile view -->
+                <ul class="navbar-nav d-lg-none w-100 border-top border-danger mt-5 pb-2 bg-white">
+                    <li class="nav-item w-100 border-info text-center">
+                        <a class="nav-link border border-info" href="{{--{{ route('login') }}--}}">Sign In</a>
+                    </li>
+                    <li class="nav-item w-100 text-center">
+                        <a class="nav-link" href="{{--{{ route('register') }}--}}">Sign Up</a>
                     </li>
                 </ul>
+        @endguest
 
-                <!-- Language Switcher -->
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ strtoupper(app()->getLocale()) }}
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                            <li><a class="dropdown-item" href="{{ route('language.switch', ['lang' => 'en', 'redirect' => request()->path()]) }}">English</a></li>
-                            <li><a class="dropdown-item" href="{{ route('language.switch', ['lang' => 'ar', 'redirect' => request()->path()]) }}">Arabic</a></li>
-                        </ul>
-                    </li>
+        <!-- Right elements (for desktop view) -->
+        <div class="d-none d-lg-flex align-items-center">
+            <!-- Icon -->
+            <a class="text-reset me-3" href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <!-- Notifications -->
+            <div class="dropdown">
+                <a
+                    class="text-reset me-3 dropdown-toggle hidden-arrow"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    <i class="fas fa-bell"></i>
+                </a>
+                <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdownMenuLink"
+                >
+                    <li><a class="dropdown-item" href="#">Some news</a></li>
+                    <li><a class="dropdown-item" href="#">Another news</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </div>
-        </nav>
+            <!-- Avatar -->
+            <div class="dropdown">
+                <a
+                    class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                    href="#"
+                    id="navbarDropdownMenuAvatar"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        class="rounded-circle"
+                        height="25"
+                        alt="Portrait of a Man"
+                    />
+                </a>
+                <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdownMenuAvatar"
+                >
+                    <li><a class="dropdown-item" href="#">My profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Right elements -->
     </div>
-</div>
+    <!-- Container -->
+</nav>
+<!-- Navbar -->

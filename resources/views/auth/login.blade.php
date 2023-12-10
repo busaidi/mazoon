@@ -1,6 +1,17 @@
-@extends('public.layouts.app')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    @if(app()->getLocale() == 'ar')
+        @vite(['resources/css/app.rtl.css', 'resources/js/app.js'])
+    @else
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @endif
 @section('title', __('navbar.about'))
 @section('content')
+    <body>
 <div class="container-xl px-4">
     <div class="row justify-content-center">
         <div class="col-lg-5">
@@ -56,4 +67,4 @@
     </div>
 </div>
 
-@endsection
+    </body>

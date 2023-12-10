@@ -40,7 +40,6 @@ Route::prefix('{locale}')->middleware(['language'])->where(['locale' => 'en|ar']
     Route::get('/testimonials', [PublicController::class, 'testimonials']);
     Route::get('/portfolio', [PublicController::class, 'portfolio']);
     Route::get('/faq', [PublicController::class, 'faq']);
-    Route::get('/pricing', [PublicController::class, 'pricing']);
     Route::get('/terms', [PublicController::class, 'terms']);
     /*Route::resource('blog', BlogController::class);
     Route::resource('news', NewsController::class);*/
@@ -53,6 +52,8 @@ Route::prefix('{locale}')->middleware(['language'])->where(['locale' => 'en|ar']
         return view('welcome');
     })->middleware(['auth', 'verified'])->name('dashboard');
 
+    Route::get('/download', [PublicController::class, 'download'])
+        ->middleware(['auth', 'verified']);
     /*
      * Auth
      */

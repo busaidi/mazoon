@@ -44,6 +44,11 @@ class PublicController extends Controller
         return view('public.pages.contact',$seoInfo);
     }
 
+    public function download()
+    {
+        return view('public.pages.contact');
+    }
+
 
 
 

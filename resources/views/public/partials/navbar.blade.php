@@ -31,7 +31,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url(app()->getLocale() . '/') }}">{{ __('navbar.home') }}</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
                         {{ __('navbar.products') }}
@@ -41,7 +41,8 @@
                                href="{{ url(app()->getLocale() . '/mazoon45') }}">{{ __('navbar.mazoon45') }}</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
+
+                    <li class="nav-item">
                     <a class="nav-link" href="{{ url(app()->getLocale() . '/about') }}">{{ __('navbar.about') }}</a>
                 </li>
 

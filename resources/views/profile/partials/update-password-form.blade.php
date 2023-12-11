@@ -1,10 +1,10 @@
 <section>
     <header>
         <h2 class="h4 fw-medium text-gray-900">
-            {{ __('Update Password') }}
+            {{ __('profile.update_password') }}
         </h2>
         <p class="mt-1 text-sm text-gray-600">
-            {{ __('Ensure your account is using a long, random password to stay secure.') }}
+            {{ __('profile.password_info') }}
         </p>
     </header>
 
@@ -14,28 +14,28 @@
 
         <!-- Current Password -->
         <div class="mb-3">
-            <label for="update_password_current_password" class="form-label">{{ __('Current Password') }}</label>
+            <label for="update_password_current_password" class="form-label">{{ __('profile.current_password') }}</label>
             <input type="password" class="form-control" id="update_password_current_password" name="current_password" autocomplete="current-password">
             <!-- Error message for current password -->
         </div>
 
         <!-- New Password -->
         <div class="mb-3">
-            <label for="update_password_password" class="form-label">{{ __('New Password') }}</label>
+            <label for="update_password_password" class="form-label">{{ __('profile.new_password') }}</label>
             <input type="password" class="form-control" id="update_password_password" name="password" autocomplete="new-password">
             <!-- Error message for new password -->
         </div>
 
         <!-- Confirm New Password -->
         <div class="mb-3">
-            <label for="update_password_password_confirmation" class="form-label">{{ __('Confirm Password') }}</label>
+            <label for="update_password_password_confirmation" class="form-label">{{ __('profile.confirm_password') }}</label>
             <input type="password" class="form-control" id="update_password_password_confirmation" name="password_confirmation" autocomplete="new-password">
             <!-- Error message for password confirmation -->
         </div>
 
         <!-- Save Button -->
         <div class="d-flex align-items-center gap-3">
-            <button type="submit" class="btn btn-primary">{{ __('Save') }}</button>
+            <button type="submit" class="btn btn-primary">{{ __('profile.save') }}</button>
 
             <!-- Success Message -->
             @if (session('status') === 'password-updated')

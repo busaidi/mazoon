@@ -1,11 +1,11 @@
 @extends('public.layouts.app')
-@section('title', __('login.profile'))
+@section('title', __('profile.title'))
 
 @section('content')
 <header class="bg-light py-3">
     <div class="container">
         <h2 class="fw-bold fs-2">
-            {{ __('Profile') }}
+            {{ __('profile.profile_information') }}
         </h2>
     </div>
 </header>

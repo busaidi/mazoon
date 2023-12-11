@@ -1,10 +1,10 @@
 <section>
     <header>
         <h2 class="h4 fw-medium text-gray-900">
-            {{ __('Profile Information') }}
+            {{ __('profile.profile_information') }}
         </h2>
         <p class="mt-1 text-sm text-gray-600">
-            {{ __("Update your account's profile information and email address.") }}
+            {{ __('profile.update_profile_info') }}
         </p>
     </header>
 
@@ -20,14 +20,14 @@
 
         <!-- Name -->
         <div class="mb-3">
-            <label for="name" class="form-label">{{ __('Name') }}</label>
+            <label for="name" class="form-label">{{ __('profile.name') }}</label>
             <input type="text" class="form-control" id="name" name="name" value="{{ old('name', $user->name) }}" required autofocus autocomplete="name">
             <!-- Error message for name -->
         </div>
 
         <!-- Email -->
         <div class="mb-3">
-            <label for="email" class="form-label">{{ __('Email') }}</label>
+            <label for="email" class="form-label">{{ __('profile.email') }}</label>
             <input type="email" class="form-control" id="email" name="email" value="{{ old('email', $user->email) }}" required autocomplete="username">
             <!-- Error message for email -->
 
@@ -49,11 +49,11 @@
 
         <!-- Save Button -->
         <div class="d-flex align-items-center gap-3">
-            <button type="submit" class="btn btn-primary">{{ __('Save') }}</button>
+            <button type="submit" class="btn btn-primary">{{ __('profile.save') }}</button>
 
             <!-- Success Message -->
             @if (session('status') === 'profile-updated')
-                <p class="text-sm text-gray-600">{{ __('Saved.') }}</p>
+                <p class="text-sm text-gray-600">{{ __('profile.saved.') }}</p>
             @endif
         </div>
     </form>

@@ -49,6 +49,11 @@ class PublicController extends Controller
         return view('public.pages.contact');
     }
 
+    public function dashboard()
+    {
+        return view('public.pages.contact');
+    }
+
 
 
 

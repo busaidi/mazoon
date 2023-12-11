@@ -49,7 +49,7 @@ Route::prefix('{locale}')->middleware(['language'])->where(['locale' => 'en|ar']
      */
 
     Route::get('/dashboard', function () {
-        return view('welcome');
+        return view('public.dashboard.dashboard');
     })->middleware(['auth', 'verified'])->name('dashboard');
 
     Route::get('/download', [PublicController::class, 'download'])

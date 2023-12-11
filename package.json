@@ -1,5 +1,6 @@
 {
     "dependencies": {
+        "@docsearch/css": "^3.5.2",
         "@fortawesome/fontawesome-free": "^6.5.1",
         "axios": "^1.6.2",
         "bootstrap": "^5.3.2"
@@ -11,6 +12,7 @@
     "private": true,
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "watch": "vite build --watch"
     }
 }

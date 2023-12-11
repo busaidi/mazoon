@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}" >
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+@extends('public.layouts.auth')
+@section('title', __('login.login'))
 
-    @if(app()->getLocale() == 'ar')
-        @vite(['resources/css/app.rtl.css', 'resources/js/app.js'])
-    @else
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @endif
-@section('title', __('navbar.about'))
 @section('content')
-    <body>
 <div class="container-xl px-4">
     <div class="row justify-content-center">
         <div class="col-lg-5">
@@ -29,7 +19,7 @@
                             <input class="form-control" {{--id="email"--}} name="email" type="email" placeholder="{{ __('login.enter email') }}" value="{{ old('email') }}" required autofocus />
                             @error('email')
                             <br>
-                            <span class="alert alert-danger" role="alert">{{ $message }}</span>
+                            <span class="alert text-danger" role="alert">{{ $message }}</span>
                             @enderror
                         </div>
                         <!-- Form Group (password)-->
@@ -38,7 +28,7 @@
                             <input class="form-control" id="password" name="password" type="password" placeholder="{{ __('login.enter password') }}" required autocomplete="current-password" />
                             @error('password')
                             <br>
-                            <span class="alert alert-danger" role="alert">{{ $message }}</span>
+                            <span class="alert text-danger" role="alert">{{ $message }}</span>
                             @enderror
 
 
@@ -54,17 +44,17 @@
                         </div>
                         <!-- Form Group (login box)-->
                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                            {{--<a class="small" href="auth-password-basic.html">Forgot Password?</a>--}}
+                            <a class="small" href="auth-password-basic.html">{{ __('login.forget password') }}</a>
                             <button type="submit" class="btn btn-primary">{{ __('login.login') }}</button>
                         </div>
                     </form>
                 </div>
                 <div class="card-footer text-center">
-                    {{--<div class="small"><a href="auth-register-basic.html">Need an account? Sign up!</a></div>--}}
+                    <div class="small"><a href="auth-register-basic.html">{{ __('login.need account') }}</a></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-    </body>
+@endsection

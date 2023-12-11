@@ -1,2 +1,3 @@
 @import 'bootstrap/dist/css/bootstrap.rtl.min.css';
-
+@import "dashboard.css";
+@import '@docsearch/css';

@@ -6,6 +6,8 @@ return [
     'enter password'=>'ادخل كلمة المرور',
     'password'=>'كلمة المرور',
     'remembered'=>'تذكر كلمة المرور',
+    'forget password'=>'نسيت كلمة المرور؟',
+    'need account'=>'لا يوجد لديك حساب؟ سجل الآن',
 
 
 

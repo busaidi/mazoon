@@ -17,9 +17,19 @@ class AuthenticatedSessionController extends Controller
     /**
      * Display the login view.
      */
+
+    public function getSEOInfo($page)
+    {
+        return [
+            'description' => __($page . '.description'),
+            'keywords' => __($page . '.keywords'),
+        ];
+    }
+
     public function create(): View
     {
-        return view('auth.login');
+        $seoInfo = $this->getSEOInfo('login');
+        return view('auth.login',$seoInfo);
     }
 
     /**

@@ -11,6 +11,9 @@ export default defineConfig({
                 'resources/css/app.css', // LTR styles
                 'resources/css/app.rtl.css', // RTL styles
                 'resources/js/app.js',
+                'resources/css/app-admin.css', // LTR styles
+                'resources/css/app-admin.rtl.css', // RTL styles
+                'resources/js/app-admin.js',
             ],
             refresh: true,
         }),

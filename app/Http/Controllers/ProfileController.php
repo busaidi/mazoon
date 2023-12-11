@@ -14,11 +14,21 @@ class ProfileController extends Controller
     /**
      * Display the user's profile form.
      */
+
+    public function getSEOInfo($page)
+    {
+        return [
+            'description' => __($page . '.description'),
+            'keywords' => __($page . '.keywords'),
+        ];
+    }
+
     public function edit(Request $request): View
     {
+        $seoInfo = $this->getSEOInfo('home');
         return view('profile.edit', [
             'user' => $request->user(),
-        ]);
+        ], $seoInfo);
     }
 
     /**

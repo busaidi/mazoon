@@ -55,20 +55,10 @@
                 <ul class="navbar-nav d-lg-none">
 
                     <li class="nav-item dropdown">
-                        <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            id="navbarDropdownMenuLinkMobile"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                        >
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-bell"></i>
                         </a>
-                        <ul
-                            class="dropdown-menu"
-                            aria-labelledby="navbarDropdownMenuLinkMobile"
-                        >
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkMobile">
                             <li><a class="dropdown-item" href="#">Some news</a></li>
                             <li><a class="dropdown-item" href="#">Another news</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>

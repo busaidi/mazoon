@@ -14,18 +14,18 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
 </head>
-<body>
-@include('public.partials.topbar')
+<body class="bg-primary">
+{{--@include('public.partials.topbar')
 @include('public.partials.navbar')
 <header>
-{{--    @include('public.partials.header')--}}
+--}}{{--    @include('public.partials.header')--}}{{--
     @yield('hero')
-</header>
+</header>--}}
 {{--    @include('public.partials.carousel')--}}
     @yield('content')
-<footer>
+{{--<footer>
     @include('public.partials.footer')
-</footer>
+</footer>--}}
 
 
 </body>

@@ -6,7 +6,10 @@ return [
     'enter password'=>'Enter Password',
     'password'=>'Password',
     'remembered'=>'Remember password',
-    'stage_1'=>'2016: Investment Corporation was established to be the leading organization that provides you with high-quality uPVC windows and doors under the trade name Apex Windows.',
-    'lead_stage_1' => '',
+    'forget password'=>'forget password?',
+    'need account'=>'do you need account? register now',
+
+    'description' => 'description',
+    'keywords' => 'About Mazoon Aluminum, aluminum solutions, glass solutions, quality, service',
 
 ];

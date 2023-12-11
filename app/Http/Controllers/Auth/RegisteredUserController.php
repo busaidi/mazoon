@@ -18,8 +18,17 @@ class RegisteredUserController extends Controller
     /**
      * Display the registration view.
      */
+    public function getSEOInfo($page)
+    {
+        return [
+            'description' => __($page . '.description'),
+            'keywords' => __($page . '.keywords'),
+        ];
+    }
     public function create(): View
     {
+        $seoInfo = $this->getSEOInfo('register');
+
         return view('auth.register');
     }
 
